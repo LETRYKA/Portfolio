@@ -11,18 +11,25 @@
 
 <body>
 
+    <div class="noise"></div>
     <div id="nav-global" class="center">
         <div class="menu-container center">
-            <div class="menu-items center">All</div>
-            <div class="menu-items center">About</div>
-            <div class="menu-items center">Contact</div>
+            <a href="#nav-global">
+                <div class="menu-items center">All</div>
+            </a>
+            <a href="#works">
+                <div class="menu-items center">About</div>
+            </a>
+            <a href="#conctact">
+                <div class="menu-items center">Contact</div>
+            </a>
         </div>
     </div>
 
     <!--- Bento Box Container --->
 
     <div class="wrapper center">
-        <div class="bento-container space-between">
+        <div style="gap: 15px;" class="bento-container row center">
             <div class="ben-about center column">
                 <div class="about-container row">
                     <div id="profile" class="center"><img width="90px" src="styles/imgs/avatar.png" alt=""></div>
@@ -37,7 +44,7 @@
                     </div>
                 </div>
 
-                <div style="background-color: #141414; border: 1px solid #3d3d3d; border-radius: 10px; height: 94px; margin-top: 25px;"
+                <div style=" border: 1px solid #262626; border-radius: 14px; height: 94px; margin-top: 25px;"
                     class="about-container row center">
                     <div class="category-container row">
                         <div class="category"><i style="color: #916CE7; margin-right: 5px;"
@@ -54,17 +61,21 @@
                                 class="fa-solid fa-location-dot"></i>Mongolia</div>
                     </div>
                 </div>
-                </div>
+            </div>
 
-                <div style="gap: 15px;" class="column">
-                    <div class="line-text center"><p> ꩜ PERSONAL <b>PORTFOLIO ꩜ </b></p><p> ꩜ PERSONAL <b>PORTFOLIO ꩜ </b></p> <p> ꩜ PERSONAL <b>PORTFOLIO ꩜ </b></p></div>
-                    <div style="gap: 15px;" class="row">
-                        <div id="map"></div>
+            <div style="gap: 15px;" class="column">
+                <div class="line-text center">
+                    <marquee><p> ꩜ PERSONAL <b>PORTFOLIO ꩜ </b></p></marquee>
+                </div>
+                <div style="gap: 15px;" class="row">
+                    <div id="map">
+                        <div class="img-holder transition"></div>
+                    </div>
                     <div style="gap: 15px;" class="column">
                         <div id="resume">
-                            <div style="margin-left: 40px; line-height:;" class="column">
-                            <h4>2024 CV</h4>
-                            <h1>RESUME</h1>
+                            <div style="margin-left: 30px;" class="column">
+                                <h4 style="color: #9B9B9B;">2024 CV</h4>
+                                <h1>RESUME</h1>
                             </div>
                             <div style="font-size: 30px; color: white; gap: 15px; margin-right: 30px;" class="row">
                                 <i class="fa-solid fa-file-arrow-down"></i>
@@ -73,9 +84,64 @@
                         </div>
                         <div id="mode"></div>
                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="wrapper center">
+        <div style="gap: 15px; margin-top: 15px;" class="bento-container row center">
+            <div style="gap: 15px;" class="row">
+                <div id="tech" class="center column">
+                    <div style="display: flex; gap: 15px; flex-flow: row; border: 1px solid red; width: 90%;" class="center">
+                        <div class="tech-box center"><img width="33px" src="styles/imgs/html.svg" alt=""></div>
+                        <div class="tech-box center"><img width="33px" src="styles/imgs/css.svg" alt=""></div>
+                        <div class="tech-box center"><img width="33px" src="styles/imgs/js.svg" alt=""></div>
+                        <div class="tech-box center"><img width="25px" src="styles/imgs/figma.svg" alt=""></div>
+                        <div class="tech-box center"><img width="35px" src="styles/imgs/vscode.svg" alt=""></div>
+                    </div>
+                    <div
+                        style="display: flex; flex-flow: column; margin-top: 30px; border: 1px solid red; width: 90%;">
+                        <h4 style="color: #9B9B9B;">Currently using</h4>
+                        <h1>MY STACKS | ❤️ </h1>
                     </div>
                 </div>
-
+                <div style="gap: 15px;" class="row">
+                    <div style="gap: 15px;" class="column">
+                        <a href="https://github.com/LETRYKA" target="_blank">
+                            <div class="social-widget center">
+                                <svg aria-hidden="true" class="octicon octicon-mark-github" height="63px" version="1.1"
+                                    viewBox="0 0 16 16" width="63px">
+                                    <path fill=" #ffffffbd" class="transition"
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="gmail.com" target="_blank">
+                            <div class="social-widget center">
+                                <svg fill="#ffffffbd" width="53px" height="53px" viewBox="0 0 36 36" version="1.1"
+                                    preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path class="clr-i-solid--badged clr-i-solid-path-1--badged transition"
+                                        d="M26,12.34A7.49,7.49,0,0,1,22.5,6H3.92a2,2,0,0,0-.53.08L17.84,20.47Z"></path>
+                                    <path class="clr-i-solid--badged clr-i-solid-path-2--badged transition"
+                                        d="M30,13.5a7.49,7.49,0,0,1-2-.29l-8.71,8.68a2,2,0,0,1-2.82,0L2,7.5a2,2,0,0,0-.07.5V28a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V12.39A7.45,7.45,0,0,1,30,13.5ZM5.3,28H3.91V26.57l7.27-7.21,1.41,1.41Zm26.61,0H30.51l-7.29-7.23,1.41-1.41,7.27,7.21Z">
+                                    </path>
+                                    <circle
+                                        class="clr-i-solid--badged clr-i-solid-path-3--badged clr-i-badge transition"
+                                        cx="30" cy="6" r="5"></circle>
+                                    <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <div style="gap: 15px;" class="row">
+                        <div style="width: 280px; height: 280px;" class="social-widget"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

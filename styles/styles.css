@@ -7,14 +7,31 @@
 body {
     padding: 0;
     margin: 0;
-    background: black;
+    background: #090D11;
     box-sizing: border-box;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #80808012 1px, transparent 1px),
+        linear-gradient(to bottom, #80808012 1px, transparent 1px);
+    background-size: 70px 70px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
- } 
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 .row {
     display: flex;
@@ -37,6 +54,10 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: space-between;
 }
 
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
 /* Navbar */
 
 #nav-global {
@@ -47,8 +68,9 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-container {
     width: 306px;
     height: 44px;
-    border: 1px solid blue;
-    background-color: #16171F;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 50px;
     color: #FFFF;
     gap: 23px;
@@ -57,8 +79,8 @@ h1, h2, h3, h4, h5, h6, p {
 .menu-items {
     width: 81px;
     height: 32px;
-    background-color: #23282D;
-    border: 1px solid blue;
+    background: #24292E;
+    border: 1px solid #262626;
     border-radius: 50px;
     cursor: pointer;
     font-size: 13px;
@@ -75,12 +97,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .ben-about {
-    border: 1px solid #9B9CA1;
-    background: #101010;
-    border-radius: 24px;
     width: 477px;
     height: 280px;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     cursor: pointer;
+    border-radius: 24px;
 }
 
 .about-container {
@@ -91,7 +114,8 @@ h1, h2, h3, h4, h5, h6, p {
 #profile {
     width: 107px;
     height: 110px;
-    background: violet;
+    background: rgb(31, 32, 42);
+    background: radial-gradient(circle, rgba(31, 32, 42, 1) 0%, rgba(17, 17, 20, 1) 100%);
     border-radius: 20px;
 }
 
@@ -115,8 +139,9 @@ h1, h2, h3, h4, h5, h6, p {
 .status {
     width: 160px;
     height: 31px;
-    background-color: #141414;
-    border: 1px solid #3d3d3d;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 50px;
     font-size: 14px;
     color: #999999;
@@ -143,11 +168,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .category {
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     display: inline-block;
     color: #CCCCCC;
     font-size: 13px;
-    background-color: #141414;
-    border: 1px solid #3d3d3d;
+
     border-radius: 50px;
     padding: 6px 10px 6px 10px;
     margin: 0 5px 5px 0;
@@ -158,33 +185,50 @@ h1, h2, h3, h4, h5, h6, p {
 .line-text {
     width: 675px;
     height: 58px;
-    background-color: #101010;
-    border: 1px solid #23282D;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 50px;
-    color: #999999;
+    color: #9B9B9B;
     font-size: 14px;
+    cursor: pointer;
 }
 
 /* MAP */
 
 #map {
-    width: 280px;
+    width: 286px;
     height: 206px;
-    background-color: #101010;
-    border: 1px solid #23282D;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 24px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img-holder {
+    width: 100%;
+    height: 100%;
+    background-image: url(./imgs/loc.jpg);
+    background-size: cover;
+}
+
+#map .img-holder:hover {
+    transform: scale(1.1);
 }
 
 #resume {
-    width: 380px;
+    width: 370px;
     height: 95px;
-    background-color: #101010;
-    border: 1px solid #23282D;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    cursor: pointer;
 }
 
 #resume h4 {
@@ -199,10 +243,65 @@ h1, h2, h3, h4, h5, h6, p {
     color: white;
 }
 
+#tech h4 {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: white;
+}
+
+#tech h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
 #mode {
-    width: 380px;
+    width: 370px;
     height: 95px;
-    background-color: #101010;
-    border: 1px solid #23282D;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
     border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* BENTO HOVERS */
+
+
+/* SECTION 2 */
+
+#tech {
+    width: 675px;
+    height: 280px;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.tech-box {
+    width: 82px;
+    height: 82px;
+    border-radius: 14px;
+    background: #24292E;
+}
+
+.social-widget {
+    width: 179px;
+    height: 132px;
+    background: rgb(24, 25, 33);
+    background: linear-gradient(135deg, rgba(24, 25, 33, 1) 0%, rgba(18, 20, 24, 1) 100%);
+    border: 1px solid #262626;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.social-widget:hover path {
+    fill: #FFFFFF;
+}
+
+.social-widget:hover circle {
+    fill: #6DD33D;
 }
