@@ -11,8 +11,18 @@
 </head>
 
 <body>
-
-    <div class="noise"></div>
+    <div class="wall">
+        <div class="no-responsive">
+            <div>
+            <lord-icon src="styles/imgs/alertCircle.json" trigger="loop" stroke="light" state="hover-pinch"
+                color=" #FFFFFF" style="width:35px;height:35px; margin-right: 10px;">
+            </lord-icon></div>
+            <div>
+            <h1>Вэб-ээр орно уу</h1>
+            <p>Энэхүү хуудсыг утаснаас үзэх боломжгүй тул та Вэб-ээр хандана уу!</p>
+            </div>
+        </div>
+    </div>
     <div id="nav-global" class="center">
         <div class="menu-container center">
             <a href="#nav-global">
@@ -73,12 +83,13 @@
                         <div style="border-radius: 50px; margin-left: -1px;" class="overlay-l"></div>
                         <div style="border-radius: 50px; margin-right: -1px;" class="overlay-r"></div>
                     </div>
-                    <div class="marquee center">
-                        <div class="track center">
-                            <div class="content">&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
-                                amet recusandae cupiditate harum vitae fugit tempore sit velit voluptatum! Repudiandae
-                                ullam adipisci pariatur et repellat dolores voluptate error vitae amet!</div>
-                        </div>
+                    <div class="text-wrapper">
+                        <h1>✨ Portfolio ✨</h1>
+                        <h1>✨ Portfolio ✨</h1>
+                        <h1>✨ Portfolio ✨</h1>
+                        <h1>✨ Portfolio ✨</h1>
+                        <h1>✨ Portfolio ✨</h1>
+                        <h1>✨ Portfolio ✨</h1>
                     </div>
                 </div>
                 <div style="gap: 15px;" class="row">
@@ -125,109 +136,123 @@
 
     <div class="wrapper center">
         <div style="gap: 15px; margin-top: 15px;" class="bento-container row center">
-            <div style="gap: 15px;" class="row">
-                <div style="position: relative;" id="tech" class="center column">
-                    <div style="position: absolute; justify-content: space-between; width: 100%; height: 100%;"
-                        class="row">
-                        <div class="overlay-l"></div>
-                        <div class="overlay-r"></div>
-                    </div>
-                    <marquee loop="Infinite" direction="right">
-                        <div style="display: flex; gap: 15px; flex-flow: row; border: 1px solid red; width: 90%; z-index: 9;"
-                            class="center">
-                            <div class="tech-box center"><img width="33px" src="styles/imgs/html.svg" alt=""></div>
-                            <div class="tech-box center"><img width="33px" src="styles/imgs/css.svg" alt=""></div>
-                            <div class="tech-box center"><img width="33px" src="styles/imgs/js.svg" alt=""></div>
-                            <div class="tech-box center"><img width="25px" src="styles/imgs/figma.svg" alt=""></div>
-                            <div class="tech-box center"><img width="35px" src="styles/imgs/vscode.svg" alt=""></div>
+            <div style="gap: 15px;" id="section2" class="row">
+                <div class="responsive-row center">
+                    <div style="position: relative;" id="tech" class="center column">
+                        <div style="position: absolute; justify-content: space-between; width: 100%; height: 100%;"
+                            class="row">
+                            <div class="overlay-l"></div>
+                            <div class="overlay-r"></div>
                         </div>
-                    </marquee>
-                    <div
-                        style="display: flex; flex-flow: column; margin-top: 30px; border: 1px solid red; width: 90%; z-index: 11;">
-                        <h4 style="color: #9B9B9B;">Technologies i use</h4>
-                        <h1 style="font-weight: 600;">SKILLS | 💜 </h1>
+                        <div style="display: flex; gap: 15px; flex-flow: row; width: 90%; z-index: 9;" class="center">
+                            <div style="width: 100%; gap: 15px;" class="marquee-wrapper">
+                                <div class="tech-box center"><img width="33px" src="styles/imgs/html.svg" alt=""></div>
+                                <div class="tech-box center"><img width="33px" src="styles/imgs/css.svg" alt=""></div>
+                                <div class="tech-box center"><img width="33px" src="styles/imgs/js.svg" alt=""></div>
+                                <div class="tech-box center"><img width="25px" src="styles/imgs/figma.svg" alt=""></div>
+                                <div class="tech-box center"><img width="35px" src="styles/imgs/vscode.svg" alt="">
+                                </div>
+                                <div class="tech-box center"><img width="33px" src="styles/imgs/html.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-flow: column; margin-top: 30px; width: 90%; z-index: 11;">
+                            <h4 style="color: #9B9B9B;">Technologies i use</h4>
+                            <h1 style="font-weight: 600;">SKILLS | 💜 </h1>
+                        </div>
+                    </div>
+                    <div style="gap: 15px;" id="socials" class="row">
+                        <div style="gap: 15px;" class="column">
+                            <a href="https://github.com/LETRYKA" target="_blank">
+                                <div class="social-widget center">
+                                    <svg aria-hidden="true" class="octicon octicon-mark-github" height="63px"
+                                        version="1.1" viewBox="0 0 16 16" width="63px">
+                                        <path fill=" #ffffffbd" class="transition"
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="mailto:helloaryka@gmail.com">
+                                <div class="social-widget center">
+                                    <svg fill="#ffffffbd" width="53px" height="53px" viewBox="0 0 36 36" version="1.1"
+                                        preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path class="clr-i-solid--badged clr-i-solid-path-1--badged transition"
+                                            d="M26,12.34A7.49,7.49,0,0,1,22.5,6H3.92a2,2,0,0,0-.53.08L17.84,20.47Z">
+                                        </path>
+                                        <path class="clr-i-solid--badged clr-i-solid-path-2--badged transition"
+                                            d="M30,13.5a7.49,7.49,0,0,1-2-.29l-8.71,8.68a2,2,0,0,1-2.82,0L2,7.5a2,2,0,0,0-.07.5V28a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V12.39A7.45,7.45,0,0,1,30,13.5ZM5.3,28H3.91V26.57l7.27-7.21,1.41,1.41Zm26.61,0H30.51l-7.29-7.23,1.41-1.41,7.27,7.21Z">
+                                        </path>
+                                        <circle
+                                            class="clr-i-solid--badged clr-i-solid-path-3--badged clr-i-badge transition"
+                                            cx="30" cy="6" r="5"></circle>
+                                        <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div style="gap: 15px;" class="row">
-                    <div style="gap: 15px;" class="column">
-                        <a href="https://github.com/LETRYKA" target="_blank">
-                            <div class="social-widget center">
-                                <svg aria-hidden="true" class="octicon octicon-mark-github" height="63px" version="1.1"
-                                    viewBox="0 0 16 16" width="63px">
-                                    <path fill=" #ffffffbd" class="transition"
-                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="mailto:helloaryka@gmail.com">
-                            <div class="social-widget center">
-                                <svg fill="#ffffffbd" width="53px" height="53px" viewBox="0 0 36 36" version="1.1"
-                                    preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <path class="clr-i-solid--badged clr-i-solid-path-1--badged transition"
-                                        d="M26,12.34A7.49,7.49,0,0,1,22.5,6H3.92a2,2,0,0,0-.53.08L17.84,20.47Z"></path>
-                                    <path class="clr-i-solid--badged clr-i-solid-path-2--badged transition"
-                                        d="M30,13.5a7.49,7.49,0,0,1-2-.29l-8.71,8.68a2,2,0,0,1-2.82,0L2,7.5a2,2,0,0,0-.07.5V28a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V12.39A7.45,7.45,0,0,1,30,13.5ZM5.3,28H3.91V26.57l7.27-7.21,1.41,1.41Zm26.61,0H30.51l-7.29-7.23,1.41-1.41,7.27,7.21Z">
-                                    </path>
-                                    <circle
-                                        class="clr-i-solid--badged clr-i-solid-path-3--badged clr-i-badge transition"
-                                        cx="30" cy="6" r="5"></circle>
-                                    <rect x="0" y="0" width="36" height="36" fill-opacity="0" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div style="gap: 15px;" class="row">
-                        <div style="width: 280px; height: 280px;" class="social-widget"></div>
+                    <div style="width: 280px; height: 280px;" class="social-widget"></div>
+                    <div id="map2">
+                        <div class="img-holder transition"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div style="gap: 15px; margin: 60px auto;" id="works" class="bento-container column center">
-        <div class="cat"><i style="margin-right: 5px;" class="fa-solid fa-file"></i>Recent</div>
-        <h1 style="color: white; font-size: 35px;">My Projects</h1>
-        <p
-            style="margin-top: 10px; text-align: center; color: #838383; width: 700px; font-size: 15px; line-height: 1.6rem;">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, nulla. Rerum inventore voluptates,
-            error et ut optio necessitatibus at dignissimos?</p>
-        <div style="gap: 15px; margin-top: 40px;" class="row">
-            <!--P1-->
-            <div id="project-1">
-                <div class="thumb">
-                    <div style="background-image: url(styles/imgs/pinetour.png);" class="img-holder transition"></div>
-                </div>
-                <div class="title">
-                    <p>with Pinecone</p>
-                    <h1>PineTour</h1>
-                </div>
-                <div class="title row">
-                    <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-html5 transition"></i>HTML</div>
-                    <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-css3-alt transition"></i>CSS
+    <div class="wrapper center">
+        <div style="gap: 15px; margin: 60px auto;" id="works" class="bento-container column center">
+            <div class="cat"><i style="margin-right: 5px;" class="fa-solid fa-file"></i>Recent</div>
+            <h1 style="color: white; font-size: 35px;">My Projects</h1>
+            <p
+                style="margin-top: 10px; text-align: center; color: #838383; width: 700px; font-size: 15px; line-height: 1.6rem;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, nulla. Rerum inventore voluptates,
+                error et ut optio necessitatibus at dignissimos?</p>
+            <div style="gap: 15px; margin-top: 40px;" id="projects" class="row center">
+                <!--P1-->
+                <div id="project-1">
+                    <div class="thumb">
+                        <div style="background-image: url(styles/imgs/pinetour.png);" class="img-holder transition">
+                        </div>
+                    </div>
+                    <div class="title">
+                        <p>with Pinecone</p>
+                        <h1>PineTour</h1>
+                    </div>
+                    <div class="title row">
+                        <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-html5 transition"></i>HTML
+                        </div>
+                        <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-css3-alt transition"></i>CSS
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--P2-->
-            <div id="project-1">
-                <div class="thumb">
-                    <div style="background-image: url(styles/imgs/gogo.png);" class="img-holder transition"></div>
-                </div>
-                <div class="title">
-                    <p>with Pinecone</p>
-                    <h1>GoGo-Clone</h1>
-                </div>
-                <div class="title row">
-                    <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-html5 transition"></i>HTML</div>
-                    <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-css3-alt transition"></i>CSS
+                <!--P2-->
+                <div id="project-1">
+                    <div class="thumb">
+                        <div style="background-image: url(styles/imgs/gogo.png);" class="img-holder transition"></div>
+                    </div>
+                    <div class="title">
+                        <p>with Pinecone</p>
+                        <h1>GoGo-Clone</h1>
+                    </div>
+                    <div class="title row">
+                        <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-html5 transition"></i>HTML
+                        </div>
+                        <div class="tag"><i style="margin-right: 8px;" class="fa-brands fa-css3-alt transition"></i>CSS
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
 
 </body>
+
+
+
 <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script src="styles/main.js"></script>
 
 </html>
